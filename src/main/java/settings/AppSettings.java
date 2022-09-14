@@ -1,3 +1,5 @@
+package settings;
+
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.nio.file.Files;
@@ -7,11 +9,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class AppSettings {
-    static String MS_SQL_PATH;
-    static String MS_SQL_USER;
-    static String MS_SQL_PWD;
+    public static String MS_SQL_PATH;
+    public static String MS_SQL_USER;
+    public static String MS_SQL_PWD;
+    public static String OUTPUT_FILE;
 
-    static void Initialaize(){
+    public static void Initialaize(){
         Path path = Paths.get("local_settings.txt");
 
         Map<String,String> properties = new HashMap<String,String>();
