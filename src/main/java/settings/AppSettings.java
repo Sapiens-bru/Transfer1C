@@ -13,6 +13,7 @@ public final class AppSettings {
     public static String MS_SQL_USER;
     public static String MS_SQL_PWD;
     public static String OUTPUT_FILE;
+    public static String APPLICATION_TYPE = "CLI";
 
     public static void Initialaize(){
         Path path = Paths.get("local_settings.txt");
