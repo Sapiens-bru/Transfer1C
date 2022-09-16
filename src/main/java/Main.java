@@ -1,3 +1,4 @@
+import FileProcessing.FileIO;
 import settings.AppSettings;
 import spring.StartWebApplication;
 
@@ -15,7 +16,7 @@ public class Main {
     }
 
     static void runCLIApp(){
-
+        FileIO.main(null);
     }
     static void runWEBApp(String... args){
         StartWebApplication.run(args);
